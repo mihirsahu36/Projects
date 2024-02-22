@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smartwatch Store</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="./img/logo.png" class="logo" alt=""></a>
+        <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="cart.html"><i class="fal fa-shopping-cart"></i></a></li>
+        </ul>
+    </div>
+    </section>
+    <section id="page-header" class="about-header">
+    <h2><div id="cart"></div></h2>
+    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Prdouct</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a hreg="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./img/apple.jpg" alt=""></td>
+                    <td>Apple Watch Series 3</td>
+                    <td>$250</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$250</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h4>Apply Coupon</h4>
+            <div>
+                <input type="text" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h4>Cart Totals</h4>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$250</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$250</strong></td>
+                </tr>
+            </table>
+            <button id="checkout-button" class="normal">Proceed to checkout</button>
+            <div id="payment-form" class="payment-form">
+                <h4>Payment Information</h4>
+                <form id="payment-details">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="mobile">Mobile:</label>
+                    <input type="text" id="mobile" required>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" required>
+                    <label for="expiration-date">Expiration Date (MM/YY):</label>
+                    <input type="text" id="expiration-date" required>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" required>
+                    <button class="normal" type="submit">Submit Payment</button>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img src="./img/logo.png" class="logo" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Sri Balaji Comforts Men Pg, Aecs Layout, Kundalahalli, Bangalore</p>
+            <p><strong>Phone:</strong> +91 7250043013</p>
+            <p><strong>Hours:</strong> 8:00-16:00, Mon-Fri</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & COnditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Playstore</p>
+            <div class="row">
+                <img src="./img/appstore.png" class="logo" alt="">
+                <img src="./img/playstore.png" class="logo" alt="">
+            </div>
+            <p>Secured PAyment Gateways</p>
+            <img src="./img/paygate.png" class="logo" alt="">
+        </div>
+        <div class="copyright">
+            <p>copyright 2021, ImperialMS</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
