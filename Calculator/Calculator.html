@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <script>
+        function display(x) {
+            document.getElementById("text1").value += x;
+        }
+        function compute() {
+            var x = document.getElementById("text1").value;
+            document.getElementById("text1").value = eval(x);
+        }
+        function del() {
+            var input = document.getElementById("text1");
+            input.value = input.value.substring(0, input.value.length - 1);
+        }
+        function calculatePercentage() {
+            var x = document.getElementById("text1").value;
+            var percentage = eval(x) / 100;
+            document.getElementById("text1").value = percentage;
+        }
+    </script>
+    <style>
+        body {
+            margin: 150px;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+        }
+        .input {
+            background-color: #4CAF50;
+            border: orange;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        h1{
+            color:orange;
+            text-align:center;
+        }
+    </style>
+    <body>
+        <center>
+            <form>
+                <table border="0" bgcolor="black" style="border-radius: 10px;">
+                <tr>
+                    <td colspan="4"><h1>Calculator</h1></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input style="height:50px;" type="textbox" id="text1" placeholder="0"></td>
+                </tr>
+                <tr>
+                    <td><input style="background-color: grey" type="reset" value="C" class="input"></td>
+                    <td><input style="background-color: grey" type="button" value="del" onclick="del()" class="input"></td>
+                    <td><input style="background-color: grey" type="button" value="%" onclick="calculatePercentage()" class="input"></td>
+                    <td><input style="background-color: orange" type="button" value="/" onclick="display(this.value)" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input style="background-color: #454545" type="button" value="7" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="8" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="9" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: orange" type="button" value="*" onclick="display(this.value)" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input style="background-color: #454545" type="button" value="4" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="5" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="6" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: orange" type="button" value="-" onclick="display(this.value)" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input style="background-color: #454545" type="button" value="1" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="2" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="3" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: orange" type="button" value="+" onclick="display(this.value)" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input style="background-color: #454545" type="button" value="0" onclick="display(this.value)" class="input"></td>
+                    <td><input style="background-color: #454545" type="button" value="." onclick="display(this.value)" class="input"></td>
+                    <td colspan="2"><input style="height:50px; background-color: orange" type="button" value="=" onclick="compute()" class="input"></td>
+                </tr>
+            </table>
+            </form>
+        </center>
+    </body>
+</html>
